@@ -1,0 +1,6 @@
+CREATE TABLE nguoidung(
+id INT AUTO_INCREMENT PRIMARY KEY,
+username varchar(255) NOT NULL UNIQUE,
+PASSWORD VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+ROLE ENUM('admin','author','user') DEFAULT 'user')
